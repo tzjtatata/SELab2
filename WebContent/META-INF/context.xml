@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+    <Resource
+            name="jdbc/DbPool"
+            auth="Container"
+            type="javax.sql.DataSource"
+            username="kokl1l0yy2"
+            password="4kj2m0h2151033mml1l31i0m4jzkkli5hm4whkil"
+            maxIdle="30"
+            maxActive="100"
+            maxWait="5000"
+            driverClassName="com.mysql.jdbc.Driver"
+            url="jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_lab2forlyz"
+    />
+</Context>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="default" extends="struts-default">
+
+        <action name="AllBooks" class="action.AllBooks">
+            <result name="success">/AllBooks.jsp</result>
+        </action>
+        <action name="searchISBN" class="action.searchISBN">
+            <result name="success">/searchResult.jsp</result>
+        </action>
+        <action name="searchTitle" class="action.searchTitle">
+            <result name="success">/searchResult.jsp</result>
+        </action>
+        <action name="searchAuthorName" class="action.searchAuthorName">
+            <result name="success">/searchResult.jsp</result>
+        </action>
+        <action name="addBook" class="action.addBook">
+            <result type="redirect">AllBooks.action</result>
+            <result name="input">/addAuthor.jsp</result>
+        </action>
+        <action name="addAuthor" class="action.addAuthor">
+            <result type="redirect">/addBook.jsp</result>
+        </action>
+        <action name="deleteBook" class="action.deleteBook">
+            <result type="redirect">AllBooks.action</result>
+        </action>
+        <action name="updateBook" class="action.updateBook">
+            <result name="success" type="redirect">AllBooks.action</result>
+            <result name="input">/updateBook.jsp</result>
+        </action>
+        <action name="furtherMsg" class = "action.furtherMsg">
+            <result name="success">
+                /FurtherMsg.jsp
+            </result>
+        </action>
+    </package>
+</struts>
